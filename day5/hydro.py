@@ -70,13 +70,9 @@ for coord in coordinates:
             end_x  = x1
     
         for i in range(starting_x, end_x+1):
-            try:
-                val = grid[y1][i]
-                grid[y1][i] = val + 1
-            except Exception:
-                import pdb; pdb.set_trace()
-                c = 1010101
-
+            val = grid[y1][i]
+            grid[y1][i] = val + 1
+            
     else:
         
         # find the highest point = lowest x highest y
