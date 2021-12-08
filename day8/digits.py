@@ -143,8 +143,10 @@ def part2():
             for real_number, required_letters in mapped_clock.iteritems():
                 if len(num) == len(required_letters):
                     not_a_match = [letter for letter in num if letter not in required_letters]
+
                     if len(not_a_match) == 0:
                         str_num += str(real_number)
+        totals.append(str_num)
 
         counter += 1
 
