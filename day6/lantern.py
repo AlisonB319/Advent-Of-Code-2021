@@ -13,7 +13,7 @@ for val in all_values:
 
 def slow_way(all_nums):
     num_days = 0
-    while(num_days != 16):
+    while(num_days != 80):
         for i in range(len(all_nums)):
             cur_val = all_nums[i]
             
@@ -36,7 +36,7 @@ def faster_way(all_nums):
     for day in all_nums:
         days[day] += 1
     
-    for _ in range(18):
+    for _ in range(256):
         life_cycle(days)
     
     print(sum(days))
