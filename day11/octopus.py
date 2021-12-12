@@ -62,9 +62,12 @@ def run(num_rounds, oct_grid):
     for i in range(num_rounds):
         oct_grid, flashes, cur_flashes = increment_all_oct(oct_grid, flashes)
 
+        # part2
         if cur_flashes == 100:
             print(i +1)
-
+            break
+    # part1
+    print(flashes)
 
 if __name__ == "__main__":
     run(300, oct_grid)
