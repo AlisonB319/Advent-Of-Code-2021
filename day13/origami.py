@@ -67,8 +67,8 @@ def fold(full_map, fold_instr, max_x, max_y):
 
     elif fold_instr[0] == 'x':
         for coord in coords:
-            x = int(coord[0])  # 0
-            y = int(coord[1])  # 14
+            x = int(coord[0]) 
+            y = int(coord[1])  
 
             if x > fold_along:
                 spaces_left = fold_along - (x - fold_along)
